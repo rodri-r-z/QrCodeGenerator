@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./fav.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="description" content="Generate QR Codes for your website or project for free.">
+    <meta robots="index, follow">
+    <title>QR Code generator</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <img src="./fav.svg" alt="QR Code" height="35">
+            </nav>
+        </header>
+        <main>
+            <div>
+                <p><strong>Info</strong></p>
+                <input value="Hello world" type="text" id="qrInput" placeholder="Enter the URL or the text.">
+                <small>* This tools is released under MIT license and its use is free. <a href="https://github.com/rodri-r-z/QrCodeGenerator">View source on GitHub</a>.</small>
+            </div>
+            <div>
+                <div id="qrResult"></div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
